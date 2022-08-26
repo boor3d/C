@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1661531325 source:c:\users\bradl\onedrive\folder\git\boor3d\c\variables_and_datatypes\variablesanddatatypes\main.c
+	<stdio.h>
+	<stdlib.h>
+
