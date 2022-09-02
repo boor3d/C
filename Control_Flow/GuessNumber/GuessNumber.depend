@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1662142700 source:c:\users\bradl\onedrive\folder\git\boor3d\c\control_flow\guessnumber\main.c
+	<stdio.h>
+	<stdlib.h>
+
