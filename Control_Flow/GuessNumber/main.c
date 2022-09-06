@@ -56,7 +56,6 @@ int main()
             return 0;
         }
 
-
         else if (userGuess > randomNumber)
         {
             printf("\n%d is too high. Guess again!\n", userGuess);
