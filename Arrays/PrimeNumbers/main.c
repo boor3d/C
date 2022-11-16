@@ -1,29 +1,40 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 int main()
 {
+    int p;
+    int i;
 
+    int primes[50] = {0};
+    int primeIndex = 2;
 
+    bool isPrime;
 
-    // Initialize the necessary variables
-    int low = 3;
-    int high = 100;
+    // hardcode prime numbers
+    primes[0] = 2;
+    primes[1] = 3;
 
-    int
+    // Iterate from 5 through 100, iterating by 2
+    for(p = 5; p <= 100; p += 2)
+    {
+        isPrime = true;
 
-    // Create a for-loop 3 to 100 and iterate for each
+        for (i = 1; isPrime && p / primes[i] >= primes[i]; ++i)
+            if (p % primes[i] == 0)
+                isPrime = false;
 
-        // Do a calculation
+        if (isPrime == true)
+        {
+            primes[primeIndex] = p;
+            ++primeIndex;
+        }
+    }
 
-        // If the number is deemed a prime
-            //Store
+    for ( i = 0;  i < primeIndex;  ++i )
+         printf ("%i  ", primes[i]);
 
-        //else
-            //drop that shiz
-
-
-
-
+    printf("\n");
     return 0;
 }
